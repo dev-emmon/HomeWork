@@ -44,7 +44,7 @@ public class ExampleFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         // 添加首次加载数据
-        adapter.addDatas(getFristData());
+        adapter.addDatas(getFirstData());
 
         // 添加下拉刷新
         final SwipeRefreshLayout refreshLayout = view.findViewById(R.id.refresh);
@@ -62,7 +62,7 @@ public class ExampleFragment extends Fragment {
         });
     }
 
-    private List<ItemEntity> getFristData() {
+    private List<ItemEntity> getFirstData() {
         List<ItemEntity> list = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             ItemEntity itemEntity = new ItemEntity();
